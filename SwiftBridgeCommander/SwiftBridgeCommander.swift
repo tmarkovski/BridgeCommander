@@ -9,7 +9,7 @@
 import Foundation
 import WebKit
 
-class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
+public class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
     let commandPrefix = "__SWIFT_BRIDGE_COMMANDER"
     let bridgeScriptObject = "__SWIFT_BRIDGE_COMMANDER_JS_OBJECT"
     
@@ -34,7 +34,7 @@ class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
         }
     }
     
-    func add(_ name: String, handler: @escaping CommandHandler){
+    public func add(_ name: String, handler: @escaping CommandHandler){
         commands[name] = handler
     }
     
@@ -80,9 +80,9 @@ struct BridgeMessage {
     var id, command, args: String?
 }
 
-typealias CommandHandler = (_ command: BridgeCommand) -> Void
+public typealias CommandHandler = (_ command: BridgeCommand) -> Void
 
-class BridgeCommand {
+public class BridgeCommand {
     private let message: BridgeMessage
     private let commander: SwiftBridgeCommander
     let args: String
@@ -93,11 +93,11 @@ class BridgeCommand {
         self.args = message.args!
     }
     
-    func send(args: String) {
+    public func send(args: String) {
         commander.send(args: args, id: self.message.id!)
     }
     
-    func error(args: String) {
+    public func error(args: String) {
         commander.error(args: args, id: self.message.id!)
     }
 }
