@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		735D25551DF1B0EC00D0FE84 /* BridgeCommanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735D25541DF1B0EC00D0FE84 /* BridgeCommanderTests.swift */; };
+		735D25571DF1B0EC00D0FE84 /* BridgeCommander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E90ABE1DF18B9800894BB3 /* BridgeCommander.framework */; };
 		73E90AC21DF18B9800894BB3 /* BridgeCommander.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E90AC01DF18B9800894BB3 /* BridgeCommander.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73E90AC61DF190B300894BB3 /* SwiftBridgeCommander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */; };
 		73E90AC71DF190BC00894BB3 /* SwiftBridgeCommander.js in Resources */ = {isa = PBXBuildFile; fileRef = 73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		735D25581DF1B0EC00D0FE84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73659F221DF0A71100861783 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73E90ABD1DF18B9800894BB3;
+			remoteInfo = BridgeCommander;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		735D25521DF1B0EC00D0FE84 /* BridgeCommanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeCommanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		735D25541DF1B0EC00D0FE84 /* BridgeCommanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeCommanderTests.swift; sourceTree = "<group>"; };
+		735D25561DF1B0EC00D0FE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftBridgeCommander.swift; path = ../SwiftBridgeCommander/SwiftBridgeCommander.swift; sourceTree = "<group>"; };
 		73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = SwiftBridgeCommander.js; path = ../SwiftBridgeCommander/SwiftBridgeCommander.js; sourceTree = "<group>"; };
 		73E90ABE1DF18B9800894BB3 /* BridgeCommander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BridgeCommander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +36,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		735D254F1DF1B0EC00D0FE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				735D25571DF1B0EC00D0FE84 /* BridgeCommander.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73E90ABA1DF18B9800894BB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,10 +54,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		735D25531DF1B0EC00D0FE84 /* BridgeCommanderTests */ = {
+			isa = PBXGroup;
+			children = (
+				735D25541DF1B0EC00D0FE84 /* BridgeCommanderTests.swift */,
+				735D25561DF1B0EC00D0FE84 /* Info.plist */,
+			);
+			path = BridgeCommanderTests;
+			sourceTree = "<group>";
+		};
 		73659F211DF0A71100861783 = {
 			isa = PBXGroup;
 			children = (
 				73E90ABF1DF18B9800894BB3 /* BridgeCommander */,
+				735D25531DF1B0EC00D0FE84 /* BridgeCommanderTests */,
 				73659F2B1DF0A71200861783 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				73E90ABE1DF18B9800894BB3 /* BridgeCommander.framework */,
+				735D25521DF1B0EC00D0FE84 /* BridgeCommanderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +106,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		735D25511DF1B0EC00D0FE84 /* BridgeCommanderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 735D255C1DF1B0EC00D0FE84 /* Build configuration list for PBXNativeTarget "BridgeCommanderTests" */;
+			buildPhases = (
+				735D254E1DF1B0EC00D0FE84 /* Sources */,
+				735D254F1DF1B0EC00D0FE84 /* Frameworks */,
+				735D25501DF1B0EC00D0FE84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				735D25591DF1B0EC00D0FE84 /* PBXTargetDependency */,
+			);
+			name = BridgeCommanderTests;
+			productName = BridgeCommanderTests;
+			productReference = 735D25521DF1B0EC00D0FE84 /* BridgeCommanderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		73E90ABD1DF18B9800894BB3 /* BridgeCommander */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73E90AC31DF18B9800894BB3 /* Build configuration list for PBXNativeTarget "BridgeCommander" */;
@@ -100,6 +152,10 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Blue Metal";
 				TargetAttributes = {
+					735D25511DF1B0EC00D0FE84 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					73E90ABD1DF18B9800894BB3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = J9VL46VYV9;
@@ -121,11 +177,19 @@
 			projectRoot = "";
 			targets = (
 				73E90ABD1DF18B9800894BB3 /* BridgeCommander */,
+				735D25511DF1B0EC00D0FE84 /* BridgeCommanderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		735D25501DF1B0EC00D0FE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73E90ABC1DF18B9800894BB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +201,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		735D254E1DF1B0EC00D0FE84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				735D25551DF1B0EC00D0FE84 /* BridgeCommanderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73E90AB91DF18B9800894BB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,7 +219,37 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		735D25591DF1B0EC00D0FE84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73E90ABD1DF18B9800894BB3 /* BridgeCommander */;
+			targetProxy = 735D25581DF1B0EC00D0FE84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		735D255A1DF1B0EC00D0FE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BridgeCommanderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluemetal.BridgeCommanderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		735D255B1DF1B0EC00D0FE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BridgeCommanderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluemetal.BridgeCommanderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		73659F451DF0A71200861783 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -289,6 +391,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		735D255C1DF1B0EC00D0FE84 /* Build configuration list for PBXNativeTarget "BridgeCommanderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				735D255A1DF1B0EC00D0FE84 /* Debug */,
+				735D255B1DF1B0EC00D0FE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		73659F251DF0A71100861783 /* Build configuration list for PBXProject "SwiftBridgeCommander" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -305,6 +415,7 @@
 				73E90AC51DF18B9800894BB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
