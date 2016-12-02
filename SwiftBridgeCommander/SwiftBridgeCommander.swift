@@ -16,7 +16,7 @@ public class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
     let webView: WKWebView
     var commands = [String: CommandHandler]()
     
-    init(webView: WKWebView) {
+    public init(_ webView: WKWebView) {
         
         self.webView = webView
         
