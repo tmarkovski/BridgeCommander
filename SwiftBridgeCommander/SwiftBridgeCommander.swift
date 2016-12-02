@@ -21,8 +21,7 @@ public class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
         self.webView = webView
         
         super.init()
-        if let filepath = Bundle.main.path(forResource: "SwiftBridgeCommander", ofType: "js") {
-            do {
+        if let filepath = Bundle(for: type(of: self)).path(forResource: "SwiftBridgeCommander", ofType: "js") {            do {
                 let contents = try String(contentsOfFile: filepath)
                 self.webView.configuration.userContentController.addUserScript(WKUserScript(source: contents, injectionTime: .atDocumentEnd, forMainFrameOnly: false))
                 self.webView.configuration.userContentController.add(self, name: commandPrefix)
@@ -85,7 +84,7 @@ public typealias CommandHandler = (_ command: BridgeCommand) -> Void
 public class BridgeCommand {
     private let message: BridgeMessage
     private let commander: SwiftBridgeCommander
-    let args: String
+    public let args: String
     
     init(_ message: BridgeMessage, commander: SwiftBridgeCommander) {
         self.message = message
