@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		73E90AC21DF18B9800894BB3 /* BridgeCommander.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E90AC01DF18B9800894BB3 /* BridgeCommander.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73E90AC61DF190B300894BB3 /* SwiftBridgeCommander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */; };
+		73E90AC71DF190BC00894BB3 /* SwiftBridgeCommander.js in Resources */ = {isa = PBXBuildFile; fileRef = 73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E90AC71DF190BC00894BB3 /* SwiftBridgeCommander.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E90AC61DF190B300894BB3 /* SwiftBridgeCommander.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
