@@ -47,5 +47,4 @@ var SwiftBridgeCommander = function() {
         if (item)
             item.error(data.payload);
     };
-};
-window.sbc = new SwiftBridgeCommander();
+}
