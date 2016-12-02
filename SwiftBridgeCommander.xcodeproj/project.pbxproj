@@ -13,6 +13,9 @@
 		73659F351DF0A71200861783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73659F341DF0A71200861783 /* Assets.xcassets */; };
 		73659F381DF0A71200861783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73659F361DF0A71200861783 /* LaunchScreen.storyboard */; };
 		73659F431DF0A71200861783 /* SwiftBridgeCommanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73659F421DF0A71200861783 /* SwiftBridgeCommanderTests.swift */; };
+		73659F4E1DF0AB8700861783 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 73659F4D1DF0AB8700861783 /* index.html */; };
+		73E90AB61DF0AFCD00894BB3 /* SwiftBridgeCommander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */; };
+		73E90AB81DF0B27200894BB3 /* SwiftBridgeCommander.js in Resources */ = {isa = PBXBuildFile; fileRef = 73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		73659F3E1DF0A71200861783 /* SwiftBridgeCommanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBridgeCommanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73659F421DF0A71200861783 /* SwiftBridgeCommanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBridgeCommanderTests.swift; sourceTree = "<group>"; };
 		73659F441DF0A71200861783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73659F4D1DF0AB8700861783 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBridgeCommander.swift; sourceTree = "<group>"; };
+		73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SwiftBridgeCommander.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				73659F341DF0A71200861783 /* Assets.xcassets */,
 				73659F361DF0A71200861783 /* LaunchScreen.storyboard */,
 				73659F391DF0A71200861783 /* Info.plist */,
+				73659F4D1DF0AB8700861783 /* index.html */,
+				73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */,
+				73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */,
 			);
 			path = SwiftBridgeCommander;
 			sourceTree = "<group>";
@@ -146,6 +155,7 @@
 				TargetAttributes = {
 					73659F291DF0A71100861783 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5CTM56XQ82;
 						ProvisioningStyle = Automatic;
 					};
 					73659F3D1DF0A71200861783 = {
@@ -179,7 +189,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E90AB81DF0B27200894BB3 /* SwiftBridgeCommander.js in Resources */,
 				73659F381DF0A71200861783 /* LaunchScreen.storyboard in Resources */,
+				73659F4E1DF0AB8700861783 /* index.html in Resources */,
 				73659F351DF0A71200861783 /* Assets.xcassets in Resources */,
 				73659F331DF0A71200861783 /* Main.storyboard in Resources */,
 			);
@@ -201,6 +213,7 @@
 			files = (
 				73659F301DF0A71200861783 /* ViewController.swift in Sources */,
 				73659F2E1DF0A71200861783 /* AppDelegate.swift in Sources */,
+				73E90AB61DF0AFCD00894BB3 /* SwiftBridgeCommander.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,10 +352,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5CTM56XQ82;
 				INFOPLIST_FILE = SwiftBridgeCommander/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluemetal.SwiftBridgeCommander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -351,10 +368,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5CTM56XQ82;
 				INFOPLIST_FILE = SwiftBridgeCommander/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluemetal.SwiftBridgeCommander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -406,6 +427,7 @@
 				73659F491DF0A71200861783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73659F4A1DF0A71200861783 /* Build configuration list for PBXNativeTarget "SwiftBridgeCommanderTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +436,7 @@
 				73659F4C1DF0A71200861783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
