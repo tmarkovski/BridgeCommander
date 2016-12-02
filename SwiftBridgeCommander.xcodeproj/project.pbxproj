@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		735D25551DF1B0EC00D0FE84 /* BridgeCommanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735D25541DF1B0EC00D0FE84 /* BridgeCommanderTests.swift */; };
 		735D25571DF1B0EC00D0FE84 /* BridgeCommander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E90ABE1DF18B9800894BB3 /* BridgeCommander.framework */; };
+		735D25611DF1B7BA00D0FE84 /* SwiftBridgeCommander.js in Resources */ = {isa = PBXBuildFile; fileRef = 735D255F1DF1B7BA00D0FE84 /* SwiftBridgeCommander.js */; };
+		735D25621DF1B7BA00D0FE84 /* SwiftBridgeCommander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735D25601DF1B7BA00D0FE84 /* SwiftBridgeCommander.swift */; };
 		73E90AC21DF18B9800894BB3 /* BridgeCommander.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E90AC01DF18B9800894BB3 /* BridgeCommander.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73E90AC61DF190B300894BB3 /* SwiftBridgeCommander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */; };
-		73E90AC71DF190BC00894BB3 /* SwiftBridgeCommander.js in Resources */ = {isa = PBXBuildFile; fileRef = 73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,8 @@
 		735D25521DF1B0EC00D0FE84 /* BridgeCommanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeCommanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		735D25541DF1B0EC00D0FE84 /* BridgeCommanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeCommanderTests.swift; sourceTree = "<group>"; };
 		735D25561DF1B0EC00D0FE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftBridgeCommander.swift; path = ../SwiftBridgeCommander/SwiftBridgeCommander.swift; sourceTree = "<group>"; };
-		73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = SwiftBridgeCommander.js; path = ../SwiftBridgeCommander/SwiftBridgeCommander.js; sourceTree = "<group>"; };
+		735D255F1DF1B7BA00D0FE84 /* SwiftBridgeCommander.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = SwiftBridgeCommander.js; sourceTree = "<group>"; };
+		735D25601DF1B7BA00D0FE84 /* SwiftBridgeCommander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBridgeCommander.swift; sourceTree = "<group>"; };
 		73E90ABE1DF18B9800894BB3 /* BridgeCommander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BridgeCommander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E90AC01DF18B9800894BB3 /* BridgeCommander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeCommander.h; sourceTree = "<group>"; };
 		73E90AC11DF18B9800894BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 		73E90ABF1DF18B9800894BB3 /* BridgeCommander */ = {
 			isa = PBXGroup;
 			children = (
-				73E90AB51DF0AFCD00894BB3 /* SwiftBridgeCommander.swift */,
-				73E90AB71DF0B27200894BB3 /* SwiftBridgeCommander.js */,
+				735D255F1DF1B7BA00D0FE84 /* SwiftBridgeCommander.js */,
+				735D25601DF1B7BA00D0FE84 /* SwiftBridgeCommander.swift */,
 				73E90AC01DF18B9800894BB3 /* BridgeCommander.h */,
 				73E90AC11DF18B9800894BB3 /* Info.plist */,
 			);
@@ -159,6 +159,7 @@
 					73E90ABD1DF18B9800894BB3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = J9VL46VYV9;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -194,7 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E90AC71DF190BC00894BB3 /* SwiftBridgeCommander.js in Resources */,
+				735D25611DF1B7BA00D0FE84 /* SwiftBridgeCommander.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E90AC61DF190B300894BB3 /* SwiftBridgeCommander.swift in Sources */,
+				735D25621DF1B7BA00D0FE84 /* SwiftBridgeCommander.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +232,7 @@
 		735D255A1DF1B0EC00D0FE84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BridgeCommanderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluemetal.BridgeCommanderTests;
@@ -242,6 +244,7 @@
 		735D255B1DF1B0EC00D0FE84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BridgeCommanderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluemetal.BridgeCommanderTests;
@@ -346,6 +349,7 @@
 		73E90AC41DF18B9800894BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -360,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmarkovski.BridgeCommander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -369,6 +374,7 @@
 		73E90AC51DF18B9800894BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
