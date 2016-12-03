@@ -1,2 +1,2 @@
 language: objective-c
-script: xcodebuild -scheme BridgeCommander CODE_SIGNING_REQUIRED=NO clean
+script: xcodebuild -scheme BridgeCommander -sdk iphonesimulator
