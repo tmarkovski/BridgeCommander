@@ -10,8 +10,8 @@ import Foundation
 import WebKit
 
 public class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
-    let commandPrefix = "__SWIFT_BRIDGE_COMMANDER"
-    let bridgeScriptObject = "__SWIFT_BRIDGE_COMMANDER_JS_OBJECT"
+    let messageHandlerName = "__SWIFT_BRIDGE_COMMANDER"
+    let bridgeScriptObject = "BridgeCommander"
     
     let webView: WKWebView
     var commands = [String: CommandHandler]()
@@ -22,11 +22,11 @@ public class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
         
         super.init()
         if let filepath = Bundle(for: type(of: self)).path(forResource: "SwiftBridgeCommander", ofType: "js") {            do {
-                let contents = try String(contentsOfFile: filepath)
-                self.webView.configuration.userContentController.addUserScript(WKUserScript(source: contents, injectionTime: .atDocumentEnd, forMainFrameOnly: false))
-                self.webView.configuration.userContentController.add(self, name: commandPrefix)
-            } catch {
-               print("Error occured")
+            let contents = try String(contentsOfFile: filepath)
+            self.webView.configuration.userContentController.addUserScript(WKUserScript(source: contents, injectionTime: .atDocumentEnd, forMainFrameOnly: false))
+            self.webView.configuration.userContentController.add(self, name: messageHandlerName)
+        } catch {
+            print("Error occured")
             }
         } else {
             print("Error script not found")
@@ -43,7 +43,11 @@ public class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
             print("Cannot parse message"); return
         }
         guard let handler = commands[msg.command!] else {
-            print("Command not registered: \(msg.command)"); return
+            let error = "Command not registered: \(msg.command!)"
+            BridgeCommand(msg, commander: self)
+                .error(args: error)
+            print(error)
+            return
         }
         handler(BridgeCommand(msg, commander: self))
     }
