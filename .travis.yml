@@ -1,5 +1,5 @@
 language: objective-c
 before_install:
     - brew update
-    - brew install xctool
+    - brew upgrade xctool
 script: xctool -workspace BridgeCommander.xcworkspace -scheme BridgeCommander build
