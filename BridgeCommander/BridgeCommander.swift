@@ -9,7 +9,7 @@
 import Foundation
 import WebKit
 
-public class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
+public class BridgeCommander : NSObject, WKScriptMessageHandler {
     let messageHandlerName = "__SWIFT_BRIDGE_COMMANDER"
     let bridgeScriptObject = "BridgeCommander"
     
@@ -21,9 +21,10 @@ public class SwiftBridgeCommander : NSObject, WKScriptMessageHandler {
         self.webView = webView
         
         super.init()
-        if let filepath = Bundle(for: type(of: self)).path(forResource: "SwiftBridgeCommander", ofType: "js") {            do {
-            let contents = try String(contentsOfFile: filepath)
-            self.webView.configuration.userContentController.addUserScript(WKUserScript(source: contents, injectionTime: .atDocumentEnd, forMainFrameOnly: false))
+        if let filepath = Bundle(for: type(of: self)).path(forResource: "BridgeCommander", ofType: "js") {
+            do {
+                let contents = try String(contentsOfFile: filepath)
+                self.webView.configuration.userContentController.addUserScript(WKUserScript(source: contents, injectionTime: .atDocumentEnd, forMainFrameOnly: false))
             self.webView.configuration.userContentController.add(self, name: messageHandlerName)
         } catch {
             print("Error occured")
@@ -87,10 +88,10 @@ public typealias CommandHandler = (_ command: BridgeCommand) -> Void
 
 public class BridgeCommand {
     private let message: BridgeMessage
-    private let commander: SwiftBridgeCommander
+    private let commander: BridgeCommander
     public let args: String
     
-    init(_ message: BridgeMessage, commander: SwiftBridgeCommander) {
+    init(_ message: BridgeMessage, commander: BridgeCommander) {
         self.message = message
         self.commander = commander
         self.args = message.args!
