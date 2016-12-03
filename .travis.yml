@@ -1,2 +1,2 @@
 language: objective-c
-script: xcodebuild -scheme BridgeCommander
+script: xcodebuild -scheme BridgeCommander CODE_SIGNING_REQUIRED=NO
