@@ -3,3 +3,5 @@ osx_image: xcode8.1
 xcode_project: BridgeCommander.xcodeproj
 xcode_scheme: BridgeCommander
 xcode_sdk: iphonesimulator10.1
+script:
+  - xctool -workspace BridgeCommander.xcworkspace -scheme BridgeCommander -sdk iphonesimulator10.1 ONLY_ACTIVE_ARCH=NO
