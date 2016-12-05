@@ -14,8 +14,8 @@ In Swift, create a `BridgeCommander` instance and start adding commands. Use `se
 In JavaScript, invoke this command as
 ```javascript
     BridgeCommander.call("echo", "Hello!")
-      .then(function(result) { console.log(result); })
-      .catch(function(error) { console.log(error); });
+        .then(function(result) { console.log(result); })
+        .catch(function(error) { console.log(error); });
 ```
 
 That's it!
@@ -24,4 +24,4 @@ That's it!
 ### Plain old copy/paste
 The simplest way would be to add `BridgeCommander.swift` and `BridgeCommander.js` to your xcode project. Make sure to update the javascript file reference inside the code if you rename the files or place them in separate folders. Do not reference the js file in your web app, it will be automatically available everywhere.
 ### Using Carthage
-This is a clean and fast way to use this as a library in your project. If you're unfamiliar with Carthage, [read Ray's article](https://www.raywenderlich.com/109330/carthage-tutorial-getting-started) on using Carthage 
+This is a clean and fast way to use this as a library in your project. If you're unfamiliar with Carthage, [read Ray's article](https://www.raywenderlich.com/109330/carthage-tutorial-getting-started) on using it 
